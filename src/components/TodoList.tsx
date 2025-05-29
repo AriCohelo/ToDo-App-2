@@ -1,16 +1,4 @@
-interface Todo {
-  id: number;
-  task: string;
-  completed: boolean;
-}
-
-interface TodoListProps {
-  title: string;
-  todos: Todo[];
-  onAddTodo: () => void;
-  onDeleteTodo: (id: number) => void;
-  onToggleTodo: (id: number) => void;
-}
+import type { TodoListProps } from '../types';
 
 export default function ToDoList({
   title,
